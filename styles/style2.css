@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --MONTSERRAT: "Montserrat";
+    --FRAUNCES: "Fraunces";
+    --BLACK: hsl(212, 21%, 14%);
+    --GREY: hsl(228, 12%, 48%);
+    --CREAM: hsl(30, 38%, 92%);
+    --WHITE: hsl(0, 0%, 100%);
+    --GREEN-2: hsl(158, 36%, 37%);
+    --GREEN-3: hsl(158, 42%, 18%);
+}
+
+body{
+    background-color: var(--CREAM);
+    min-height: 50vh;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    width: 90%;
+    margin: 4rem auto;
+    padding: 0;
+    gap: 0;
+}
+
+.product-img{
+    width: 26.2%;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+}
+
+.product-details{
+    background-color: var(--WHITE);
+    width: 27%;
+    padding: 2rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border-top-right-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+}
+
+.product-details .category{
+    font-family: var(--MONTSERRAT);
+    color: var(--GREY);
+    font-size: .8rem;
+    letter-spacing: 6px;  
+}
+
+.product-details h1{
+    font-family: var(--FRAUNCES);
+    color: var(--BLACK);
+    font-size: 2rem;
+    margin: 1rem 0;
+    line-height: 35px;
+    text-align: left;
+}
+
+.product-details .description{
+    font-family: var(--MONTSERRAT);
+    color: var(--GREY);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin: 1.8rem 0;
+}
+
+.current-price{
+    font-size: 2rem;
+    color: var(--GREEN-2);
+    font-family: var(--FRAUNCES);
+    font-weight: 900;
+    margin-right: .9rem;
+    text-align: left;
+}
+
+.original-price{
+    color: var(--GREY);
+    text-decoration: line-through;
+    font-family: var(--MONTSERRAT);
+    font-size: 14px;  
+}
+
+.add-to-cart{
+    background-color: var(--GREEN-2);
+    width: 100%;
+    border: 0;
+    height: 3rem;
+    color: var(--WHITE);
+    border-radius: .5rem;
+}
+
+.cart-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.cart-btn p{
+    font-weight: 500;
+    font-size: 14px;
+    font-family: var(--MONTSERRAT);
+}
+
+.cart-btn img{
+    margin-right: .7rem;
+}
